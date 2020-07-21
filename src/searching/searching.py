@@ -9,7 +9,7 @@ def binary_search(arr, target, start, end):
     else:
         if arr[mid] < target:
             return binary_search(arr, target, mid + 1, end)
-        elif arr[mid] > target:
+        else:
             return binary_search(arr, target, start, mid - 1)
 
 
